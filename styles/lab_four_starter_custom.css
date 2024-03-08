@@ -24,6 +24,14 @@ body, button, summary, a {
     transform: translate(-50%, -50%); 
     color: white; 
 }
+.hero-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
 
 
 
