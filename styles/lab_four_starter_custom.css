@@ -15,11 +15,17 @@ body, button, summary, a {
     align-items: center;
 }
 
-.hero-text, .content-message, .ct-msgs {
+.hero-text {
     text-align: center;
+    width: 100%; 
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white; 
 }
 
-/* Additional styles remain the same */
+
 
 .content-container, .accordion-container, .footer-container {
     background-color: transparent;
