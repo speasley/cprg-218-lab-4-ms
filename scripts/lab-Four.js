@@ -8,4 +8,3 @@ document.querySelectorAll("details.accordion").forEach((accordion) => {
   
   // Update the footer year
   document.getElementById("footer-year").textContent = new Date().getFullYear();
-  
