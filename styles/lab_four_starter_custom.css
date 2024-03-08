@@ -1,5 +1,8 @@
-body {
-    font-family: "Madimi One", sans-serif;
+/* Import the font */
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+body, button, summary, a {
+    font-family: 'Madimi One', sans-serif;
 }
 
 .hero-img {
