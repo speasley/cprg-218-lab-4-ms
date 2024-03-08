@@ -33,8 +33,6 @@ body, button, summary, a {
     position: relative;
 }
 
-
-
 .content-container, .accordion-container, .footer-container {
     background-color: transparent;
 }
