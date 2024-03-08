@@ -1,4 +1,3 @@
-/* Import the font */
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
 
 body, button, summary, a {
@@ -6,7 +5,7 @@ body, button, summary, a {
 }
 
 .hero-img {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/bnw.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/camera.jpg");
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,6 +18,8 @@ body, button, summary, a {
 .hero-text, .content-message, .ct-msgs {
     text-align: center;
 }
+
+/* Additional styles remain the same */
 
 .content-container, .accordion-container, .footer-container {
     background-color: transparent;
