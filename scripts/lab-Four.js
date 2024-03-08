@@ -1,12 +1,11 @@
-let accordions = document.querySelectorAll("button.accordion");
-
-accordions.forEach((acco) => {
-  acco.onclick = () => {
-    acco.classList.toggle("active");
-    acco.nextElementSibling.classList.toggle("active-panel");
-    acco.getElementsByClassName("fa-solid")[0].classList.toggle("fa-chevron-up");
-    acco.getElementsByClassName("fa-solid")[0].classList.toggle("fa-chevron-down")
-  };
-});
-
-document.getElementById("footer-year").textContent = new Date().getFullYear();
+// Correct the JavaScript for accordion functionality, if necessary
+document.querySelectorAll("details.accordion").forEach((accordion) => {
+    accordion.querySelector("summary").addEventListener("click", function() {
+      this.parentElement.classList.toggle("active");
+      // Toggle icons or additional styles if needed
+    });
+  });
+  
+  // Update the footer year
+  document.getElementById("footer-year").textContent = new Date().getFullYear();
+  

@@ -2,11 +2,9 @@ body {
     font-family: "Madimi One", sans-serif;
 }
 
-/* Hero Banner */
 .hero-img {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/bnw.jpg");
-    height: 100%;
-    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/bnw.jpg");
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,120 +13,55 @@ body {
     align-items: center;
 }
 
-.hero-text {
+.hero-text, .content-message, .ct-msgs {
     text-align: center;
 }
 
-.content-container{
-    background-color: unset;
-    height: inherit;
+.content-container, .accordion-container, .footer-container {
+    background-color: transparent;
 }
 
-.content {
+.content, .footer-message {
     display: flex;
     justify-content: space-around;
 }
 
-.ct-msgs {
+.ct-msgs, .footer-info, .footer-links {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    justify-content: center;
     align-items: center;
 }
 
-.ct-image img {
-    margin-left: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    max-width: 400px;
-    max-height: 400px;
-    object-fit: contain;
+.ct-image img, .footer-icons i {
+    margin: 1rem;
     border-radius: 10px;
-    border: 1px solid black;
-}
-
-/* Accordion */
-
-.accordion-container {
-    background-color: unset;
-    height: unset;
-}
-
-.accordion-header {
-    color: #444;
 }
 
 .accordion {
     background-color: #eee;
     color: #444;
-    cursor: pointer;
     padding: 18px;
     width: 100%;
-    text-align: left;
     border: none;
     outline: none;
     transition: 0.4s;
-    display: flex;
-    justify-content: space-between;
 }
 
-/* Footer */
-
-.footer-container {
-    background-color: black; 
-    height: unset;
-    color: white;
-}
 .footer-wrapper {
     display: flex;
-    flex-direction: row;
     padding: 3rem;
 }
 
-.footer-message {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: auto;
+.footer-map iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
 }
 
-.footer-icons {
-    font-size: 2rem;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-}
-
-.footer-message a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer-copyright {
-    margin: auto;
-}
-
-.footer-map {
-    width: 50%;
-    margin: auto;
-}
-
-@media ( width <= 1200px) {
-    .content{
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
-    .footer-message {
-        width: 100%;
-    }
-
-    .footer-wrapper {
+@media only screen and (max-width: 1200px) {
+    .content, .footer-wrapper {
         flex-direction: column;
-        padding: 1rem;
+        align-items: center;
     }
 
     .footer-map {
@@ -136,14 +69,12 @@ body {
     }
 }
 
-@media ( width <= 400px) {
+@media only screen and (max-width: 400px) {
     .content-image {
         display: none;
     }
 
     .footer-message {
-        width: 100%;
         flex-direction: column;
     }
-
 }
