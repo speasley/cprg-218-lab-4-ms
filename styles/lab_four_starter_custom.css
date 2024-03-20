@@ -66,6 +66,12 @@ body, button, summary, a {
 .footer-wrapper {
     display: flex;
     padding: 3rem;
+    & > div {
+        flex: 1 0 calc(100vw / 3);
+    }
+    & .footer-info, .footer-links {
+        width: 100%;
+    }
 }
 
 .footer-map iframe {
@@ -92,5 +98,11 @@ body, button, summary, a {
 
     .footer-message {
         flex-direction: column;
+    }
+
+    .footer-wrapper {
+        & > div {
+            flex: 1 0 100%;
+        }
     }
 }
